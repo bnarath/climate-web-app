@@ -6,7 +6,7 @@
         <!--Add bootstrap style file-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!--Add custom style file-->
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
     </head>
     <body>
         <!--navbar-->
@@ -33,12 +33,47 @@
                   <a class="nav-link" href=#>Comparison</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="data.html">Data</a>
+                  <a class="nav-link" href="data.html">Data</a>
                 </li>
               </ul>
             </div>
-          </nav>
+        </nav>
 
+        <div class = "container-fluid my-4" id="content">
+            <div class = "row">
+              <div class = "col">
+                <div class = "jumbotron jumbotron-fluid">
+                  <h2 class = "text-success">Comparison: Latitude vs. X</h2>
+                  <hr class="my-4">
+                  <p class = "text-muted">Click any of the plots to get an in-depth analysis.</p>
+                </div>
+              </div>
+            </div>
+            <div class = "row">
+                  <div class= "col-sm-6">
+                    <a href="max_temperature.html">
+                      <img class = "img-fluid" src = "../assets/images/Fig1.png" alt= "Comparison: Latitude vs Max Temperature"> 
+                    </a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a href="humidity.html">
+                      <img class="img-fluid" src = "../assets/images/Fig2.png" alt="Comparison: Latitude vs humidty">
+                    </a>
+                  </div>
+            </div>
+            <div class = "row">
+                <div class="col-sm-6">
+                    <a href="cloudiness.html">
+                    <img class="img-fluid" src = "../assets/images/Fig3.png" alt="Comparison: Latitude  vs cloudiness">  
+                    </a>
+                </div>
+                <div class= "col-sm-6">
+                    <a href="wind_speed.html">
+                    <img  class="img-fluid" src = "../assets/images/Fig4.png" alt="Comparison: Latitude  vs Wind Speed">
+                    </a>
+                </div>
+            </div>
+        </div>
     
         <!--Bootstrap requires JQuery, Popper.JS and JS plugins-->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
