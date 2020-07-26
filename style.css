@@ -1,0 +1,10 @@
+.img-downsize{
+    width:200px;
+    height:auto;
+}
+
+.img-downsize-sm{
+    width:100px;
+    height:auto;
+    margin: 15px;
+}
