@@ -8,3 +8,32 @@
     height:auto;
     margin: 15px;
 }
+
+#latitude {
+    margin:  15px 10px -8px 10px;
+    padding: 5px;
+    background-color: #5cb85c;
+    color: #f7f7f7;
+}
+
+#navItems {
+    margin-bottom: -30px;
+    margin-right: 10px;  
+}
+
+
+.bg-custom {
+    background-color:#f7f7f7;
+}
+
+@media all and (max-width: 576px) {
+   
+    #latitude {
+        color: #f7f7f7;
+        margin:  15px 10px 10px 10px;
+        padding: 5px;
+    }
+    .bg-custom {
+        background-color:#5cb85c;
+    }
+}
