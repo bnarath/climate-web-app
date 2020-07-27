@@ -1,12 +1,13 @@
 .img-downsize{
-    width:200px;
+    width:50%;
+    max-width:50%;;
     height:auto;
 }
 
 .img-downsize-sm{
-    width:100px;
+    width:100%;
+    max-width:100%;;
     height:auto;
-    margin: 15px;
 }
 
 #latitude {
@@ -23,11 +24,78 @@
 
 
 .bg-custom {
-    background-color:#f7f7f7;
+    background-color:white;
 }
 
-@media all and (max-width: 576px) {
-   
+.background {
+    background-color: #EDEDED;
+    height: 100%;
+}
+
+#summary {
+    max-width: 85%;
+    margin-bottom: 500px;
+}
+#visualizations {
+    max-width: 80%;
+}
+#comparisons {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#data {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mar_1 {
+    margin: 10px -50px 0px 10px !important;
+ }
+
+.mar_2 {
+    margin: 10px 10px 0px -10px !important;
+ }
+
+.mar_3 {
+    margin: 30px -50px -30px 10px !important;
+ }
+
+.mar_4 {
+    margin: 30px 10px 0px -10px !important;
+ }
+
+h1 {
+    font-size: 5.5vw;
+  }
+h2 {
+    font-size: 4.0vw;
+  }
+h3 {
+    font-size: 3.0vw;
+  }
+h4 {
+    font-size: 2.5vw;
+    font-weight: bolder;
+  }
+p,th{
+    font-size: 1.5vw;
+    line-height: 1.7;
+  }
+tr,td {
+    font-size: 1.2vw;
+  }
+
+
+.background_page{
+    background-color:  #EDEDED;
+}
+
+
+@media all and (max-width: 768px) {
+
     #latitude {
         color: #f7f7f7;
         margin:  15px 10px 10px 10px;
@@ -36,4 +104,56 @@
     .bg-custom {
         background-color:#5cb85c;
     }
+
+    .background {
+        background-color:white;
+    }
+    #summary {
+        margin-bottom:0px;
+        padding-bottom:0px;
+        max-width: 100%;
+    }
+    #visualizations {
+        margin-top:0px;
+        padding-top:0px;
+        padding-left: 30px;
+        max-width: 100%;
+    }
+
+    .mar_1, .mar_2, .mar_3, .mar_4 {
+        margin: 0px !important;
+     }
+
+     h1 {
+        font-size: 8.0vw;
+      }
+    h2 {
+        font-size: 6.5vw;
+      }
+    h3 {
+        font-size: 5.0vw;
+      }
+    h4 {
+        font-size: 3.5vw;
+        font-weight: bolder;
+      }
+    p,th {
+        font-size: 2.0vw;
+        line-height: 1.7;
+      }
+
+    tr,td {
+        font-size: 1.5vw;
+      }
+
+    .background_page{
+        background-color: white;
+    }
+
+    #data {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }

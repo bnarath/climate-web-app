@@ -8,72 +8,79 @@
         <!--Add custom style file-->
         <link rel="stylesheet" type="text/css" href="../../style.css">
     </head>
-    <body>
-        <!--navbar-->
-        <nav class="navbar navbar-expand-sm navbar-light bg-custom">
-            <a id="latitude" class="navbar-brand" href="#">Latitude</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
+    <body class="background_page">
+         <!--navbar-->
+         <nav class="navbar navbar-expand-sm navbar-light bg-custom mb-5">
+            <a id="latitude" class="navbar-brand" href="../../index.html"><strong>Latitude</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navItems">
-              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="plotsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Plots
+              <ul class="navbar-nav ml-auto mt-2 mb-3">
+                <li class="nav-item dropdown ml-auto">
+                    <a class="nav-link dropdown-toggle ml-auto" href="#" id="plotsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <strong>Plots</strong>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="plotsDropdown">
-                      <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
-                      <a class="dropdown-item" href="humidity.html">Humidity</a>
-                      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                      <a class="dropdown-item" href="wind_speed.html">Windspeed</a>
+                      <a class="dropdown-item" href="max_temperature.html"><strong>Max Temperature</strong></a>
+                      <a class="dropdown-item" href="humidity.html"><strong>Humidity</strong></a>
+                      <a class="dropdown-item" href="cloudiness.html"><strong>Cloudiness</strong></a>
+                      <a class="dropdown-item" href="wind_speed.html"><strong>Windspeed</strong></a>
                     </div>
                   </li>
-                <li class="nav-item">
-                  <a class="nav-link" href=#>Comparison</a>
+                <li class="nav-item ml-auto">
+                  <a class="nav-link" href=#><strong>Comparison</strong></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="data.html">Data</a>
+                <li class="nav-item ml-auto">
+                  <a class="nav-link" href="data.html"><strong>Data</strong></a>
                 </li>
               </ul>
             </div>
         </nav>
 
-        <div class = "container-fluid my-4" id="content">
+        <div class="container bg-white" id="comparisons">
             <div class = "row">
-              <div class = "col">
-                <div class = "jumbotron jumbotron-fluid">
-                  <h2 class = "text-success">Comparison: Latitude vs. X</h2>
-                  <hr class="my-4">
-                  <p class = "text-muted">Click any of the plots to get an in-depth analysis.</p>
+                <div  class = "col-12">
+                    <div class = "px-4 jumbotron jumbotron-fluid bg-white">
+                    <h2 class = "text-success">Comparison: Latitude vs. X</h2>
+                    <hr class="my-4">
+                    <p class = "text-muted">Click any of the plots to get an in-depth analysis.</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class = "row">
-                  <div class= "col-md-6">
+                </div>
+                <div class = "row mb-5">
+                    <div class= "col-md-6">
+                    <h3 class = "text-success text-center">vs. Max Temperature</h3>
                     <a href="max_temperature.html">
-                      <img class = "img-fluid" src = "../assets/images/Fig1.png" alt= "Comparison: Latitude vs Max Temperature"> 
+                        <img class = "img-fluid" src = "../assets/images/Fig1.png" alt= "Comparison: Latitude vs Max Temperature"> 
                     </a>
-                  </div>
-                  <div class="col-md-6">
+                    </div>
+                    
+                    <div class="col-md-6">
+                    <h3 class = "text-success text-center">vs. Humidty</h3>
                     <a href="humidity.html">
-                      <img class="img-fluid" src = "../assets/images/Fig2.png" alt="Comparison: Latitude vs humidty">
+                        <img class="img-fluid" src = "../assets/images/Fig2.png" alt="Comparison: Latitude vs Humidty">
                     </a>
-                  </div>
-            </div>
-            <div class = "row">
+                    </div>
+                </div>
+                <div class = "row mt-5">
                 <div class="col-md-6">
+                    <h3 class = "text-success text-center">vs. Cloudiness</h3>
                     <a href="cloudiness.html">
-                    <img class="img-fluid" src = "../assets/images/Fig3.png" alt="Comparison: Latitude  vs cloudiness">  
+                    <img class="img-fluid" src = "../assets/images/Fig3.png" alt="Comparison: Latitude  vs Cloudiness">  
                     </a>
                 </div>
                 <div class= "col-md-6">
+                    <h3 class = "text-success text-center">vs. Wind Speed</h3>
                     <a href="wind_speed.html">
                     <img  class="img-fluid" src = "../assets/images/Fig4.png" alt="Comparison: Latitude  vs Wind Speed">
                     </a>
                 </div>
-            </div>
+                </div>
         </div>
+
+
     
         <!--Bootstrap requires JQuery, Popper.JS and JS plugins-->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
