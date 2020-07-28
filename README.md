@@ -8,37 +8,29 @@ The data retrieval and analysis are the same as that of [the project](https://gi
 
 ## Web portal is [here](https://bnarath.github.io/climate-web-app/). Check it out!!!
 
-![Images/landingResize.png](Images/landingResize.png)
+## Code for Data Retrieval and Visualization is [here](Code/Data_Retrieval_and_Plotting.ipynb)
 
-### Before You Begin
+## Cleaned Data used for Visualization is [here](Output/cleaned_cities_weather.csv)
 
-1. Create a new repository for this project called `Web-Design-Challenge`. **Do not add this homework to an existing repository**.
+## Web design
 
-2. Clone the new repository to your computer.
+Portal has a total of 7 pages interconnected. 
 
-3. Inside your local git repository, create a directory for the web challenge. Use a folder name to correspond to the challenge: **WebVisualizations**.
+- Landing page (summary of the study)
+- Pages for each study (4 pages)
+- Comparison page (comparison of all of the plots)
+- Data page (where we can view the data used to build them)
 
-4. Add your **html** files to this folder as well as your **assets**, **Resources** and **visualizations** folders.
+## Website Features
 
-5. Push the above changes to GitHub or GitLab.
-
-6. Deploy to GitHub pages. 
-
-## Latitude - Latitude Analysis Dashboard with Attitude
-
-For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting [weather data](Resources/cities.csv).
-
-In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
-
-### Website Requirements
-
-For reference, see the ["Screenshots" section](#screenshots) below.
-
-The website must consist of 7 pages total, including:
+The website consists of 7 pages total, including:
 
 * A [landing page](#landing-page) containing:
   * An explanation of the project.
   * Links to each visualizations page. There should be a sidebar containing preview images of each plot, and clicking an image should take the user to that visualization.
+  
+    <img src="Images/front_page.png" width="50%" height="50%">
+  
 * Four [visualization pages](#visualization-pages), each with:
   * A descriptive title and heading tag.
   * The plot/visualization itself for the selected comparison.
