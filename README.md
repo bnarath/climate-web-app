@@ -64,14 +64,13 @@ This section contains screenshots of each page built, at varying screen widths.
 
 #### <a id="landing-page"></a>Landing page
 
-Large screen:
+Large screen Vs Small Screen:
 
-![Landing page large screen](Images/front_page.png)
+<p>
+  <img src="Images/front_page.png" alt="Landing page large screen" width="45%"/>
+  <img src="Images/front_page_sm.png" alt="Landing page small screen" width="45%"/> 
+</p>
 
-Small screen:
-
-![Landing page small screen](Images/landing-sm.png)
-￼
 
 #### <a id="comparisons-page"></a>Comparisons page
 
