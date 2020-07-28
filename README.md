@@ -74,24 +74,23 @@ Large screen Vs Small Screen:
 
 #### <a id="comparisons-page"></a>Comparisons page
 
-Large screen:
+Large screen Vs Small Screen:
 
-![comparison page large screen](Images/comparison-lg.png)
+<p>
+  <img src="Images/comparison-lg.png" alt="comparison page large screen" width="60%" height="300px"/>
+  <img src="Images/comparison-sm.png" alt="comparison page small screen" width="30%" height="300px"/> 
+</p>
 
-Small screen:
 
-![comparison page small screen](Images/comparison-sm.png)
 
 #### <a id="data-page"></a>Data page
 
-Large screen:
+Large screen Vs Small Screen:
 
-![data page large screen](Images/data-lg.png)
-
-
-Small screen:
-
-![data page small screen](Images/data-sm.png)
+<p>
+  <img src="Images/comparison-lg.png" alt="data page large screen" width="60%" height="300px"/>
+  <img src="Images/comparison-sm.png" alt="data page small screen" width="30%" height="300px"/> 
+</p>
 
 
 #### <a id="visualization-pages"></a>Visualization pages
