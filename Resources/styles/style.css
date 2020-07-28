@@ -131,11 +131,11 @@ tr,td {
     color: white;
   }
 
-@media all and (min-width: 768px){
-    li:hover a:hover {
-        background-color: lightcoral;
-      }
-}  
+li:hover a:hover {
+    text-decoration: none;
+    border: none;
+    transform: skew(-20deg);
+  }
 
 @media all and (max-width: 768px) {
 
@@ -199,17 +199,4 @@ tr,td {
         margin-right: auto;
         margin-top: 100px;
     }
-
-    .dropdown-menu{
-        background-color: #5cb85c;
-        color:grey;
-        border: none !important;
-        border-radius: 0 !important;
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-      }
-    
-    li:hover a:hover {
-        text-decoration: underline;
-      }
 }
