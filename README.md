@@ -96,13 +96,12 @@ Large screen Vs Small Screen:
 #### <a id="visualization-pages"></a>Visualization pages
 
 
-Large screen:
+Large screen Vs Small Screen for Max Temperature (Other pages are also similar):
 
-![visualize page large screen](Images/visualize-lg.png)
-
-Small screen:
-
-![visualize page small screen](Images/visualize-sm.png)
+<p>
+  <img src="Images/visualize-lg.png" alt="visualize page large screen" width="60%" height="300px"/>
+  <img src="Images/visualize-sm.png" alt="visualize page small screen" width="30%" height="300px"/> 
+</p>
 
 
 #### <a id="navigation-menu"></a>Navigation menu
