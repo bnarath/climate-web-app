@@ -3,6 +3,7 @@
 ## Introduction
 
 Data is more powerful when we share it with others! In this project, a web portal is built to create a dashboard showing the results of the analysis.
+![Images/landingResize.png](Images/front_page.png)
 The data retrieval and analysis are the same as that of [the project](https://github.com/bnarath/python-api-challenge), where we identify globally dispersed locations and the nearby cities to those locations using [citipy API](https://pypi.org/project/citipy/). Then, retrieve the weather information of those cities via [OpenWeatherMap API](https://openweathermap.org/api). This weather data is later analysed to understand the impact of latitude on various aspects of the weather. Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
 
 ## Web portal is [here](https://bnarath.github.io/climate-web-app/). Check it out!!!
