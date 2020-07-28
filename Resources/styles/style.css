@@ -4,6 +4,16 @@
     height:auto;
 }
 
+.img-downsize-md{
+    width:75%;
+    max-width:75%;;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 .img-downsize-sm{
     width:100%;
     max-width:100%;;
@@ -30,6 +40,7 @@
 .background {
     background-color: #EDEDED;
     height: 100%;
+    margin-top: 60px;
 }
 
 #summary {
@@ -43,12 +54,14 @@
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
 }
 
 #data {
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
 }
 
 .mar_1 {
@@ -64,7 +77,7 @@
  }
 
 .mar_4 {
-    margin: 30px 10px 0px -10px !important;
+    margin: 30px 10px -30px -10px !important;
  }
 
 h1 {
@@ -80,7 +93,7 @@ h4 {
     font-size: 2.5vw;
     font-weight: bolder;
   }
-p,th{
+p,th,li, .fontp{
     font-size: 1.5vw;
     line-height: 1.7;
   }
@@ -93,6 +106,36 @@ tr,td {
     background-color:  #EDEDED;
 }
 
+
+#navItems > ul > li > div > a {
+    font-size: 1.4vw;
+    line-height: 2vh;
+    font-weight: 1vmin;
+    height: 2vh;
+    padding: 0px 0px 0px 5px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+.dropdown-menu{
+    background-color:white;
+    height: 10vh;
+    width:20vw;
+    min-width: 0;
+    overflow: scroll;
+  }
+
+.dropdown-menu>a.active{
+    background-color: lightcoral;
+    color: white;
+  }
+
+@media all and (min-width: 768px){
+    li:hover a:hover {
+        background-color: lightcoral;
+      }
+}  
 
 @media all and (max-width: 768px) {
 
@@ -137,8 +180,8 @@ tr,td {
         font-size: 3.5vw;
         font-weight: bolder;
       }
-    p,th {
-        font-size: 2.0vw;
+    p,th,li, .fontp {
+        font-size: 2.5vw;
         line-height: 1.7;
       }
 
@@ -154,6 +197,19 @@ tr,td {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 100px;
     }
+
+    .dropdown-menu{
+        background-color: #5cb85c;
+        color:grey;
+        border: none !important;
+        border-radius: 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+      }
     
+    li:hover a:hover {
+        text-decoration: underline;
+      }
 }

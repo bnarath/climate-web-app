@@ -5,38 +5,44 @@
         <title>wind-speed</title>
         <!--Add bootstrap style file-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+         <!--Font awesome glyphicon free alternative-->
+         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>       
         <!--Add custom style file-->
-        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
     </head>
     <body>
         <!--navbar-->
-        <nav class="navbar navbar-expand-sm navbar-light bg-custom">
-            <a id="latitude" class="navbar-brand" href="../../index.html"><strong>Latitude</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems" aria-expanded="true" aria-label="Toggle navigation">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-custom">
+            <a id="latitude" class="navbar-brand" href="../../index.html"><strong>Latitude <i class="fa fa-globe" aria-hidden="true"></i></strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navItems">
-              <ul class="navbar-nav ml-auto mt-2 mb-3">
-                <li class="nav-item dropdown ml-auto">
-                    <a class="nav-link dropdown-toggle ml-auto" href="#" id="plotsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <strong>Plots</strong>
+                <ul class="navbar-nav ml-auto mt-2 mb-3">
+                  <li class="nav-item dropleft ml-auto">
+                      <a class="nav-link dropdown-toggle ml-auto" href="#" id="plotsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-bar-chart" aria-hidden="true"></i> Plots
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="plotsDropdown">
+                        <a class="dropdown-item" href="max_temperature.html"><i class="fa fa-sun-o" aria-hidden="true"></i> Max Temperature</a>
+                        <a class="dropdown-item " href="humidity.html"><i class="fa fa-tint" aria-hidden="true"></i> Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html"><i class="fa fa-cloud" aria-hidden="true"></i> Cloudiness</a>
+                        <a class="dropdown-item active" href=#><i class="fa fa-fighter-jet" aria-hidden="true"></i>Windspeed</a>
+                      </div>
+                    </li>
+                  <li class="nav-item ml-auto">
+                    <a class="nav-link" href="comparisons.html">
+                      <i class="fa fa-book" aria-hidden="true"></i> Comparison
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="plotsDropdown">
-                      <a class="dropdown-item" href="max_temperature.html"><strong>Max Temperature</strong></a>
-                      <a class="dropdown-item" href="humidity.html"><strong>Humidity</strong></a>
-                      <a class="dropdown-item" href="cloudiness.html"><strong>Cloudiness</strong></a>
-                      <a class="dropdown-item" href=#><strong>Windspeed</strong></a>
-                    </div>
                   </li>
-                <li class="nav-item ml-auto">
-                  <a class="nav-link" href="comparisons.html"><strong>Comparison</strong></a>
-                </li>
-                <li class="nav-item ml-auto">
-                  <a class="nav-link" href="data.html"><strong>Data</strong></a>
-                </li>
-              </ul>
-            </div>
+                  <li class="nav-item ml-auto">
+                    <a class="nav-link" href="data.html">
+                      <i class="fa fa-table" aria-hidden="true"></i> Data</a>
+                  </li>
+                </ul>
+              </div>
+
         </nav>
 
         <div class = "container-fluid background">
@@ -45,8 +51,35 @@
                 <div id="summary" class = "mt-5 px-4 jumbotron jumbotron-fluid bg-white ml-auto">
                     <h2 class = "text-success">Wind Speed</h2>
                     <hr class="my-4">
-                    <img  class="img-fluid img-downsize-sm" src = "../assets/images/Fig4.png" alt= "Latitude  vs Wind Speed"> 
-                    <p>Most of the cities measured had a wind speed of less than 10 mph on April 15th. The southern hemisphere has 3 cities with a wind speed of greater than 22 mph, where has the northern hemisphere has only two cities that are above 20 mph. Similar to the other graphs we can observe that the southern hemishpehere has more data points so there is a reporting bias towards the southern hemishphere. With that in mind the majority of the cities fall below the 10 mph mark.</p>
+                    <img  class="img-fluid img-downsize-md" src = "../assets/images/plot4.png" alt= "Latitude  vs Wind Speed"> 
+                    <p>Majority of the cities measured has wind speeds less than 15 mph at the time of data retrieval. The regression analysis on both the hemispheres leads to better understanding!</p>
+                    <div class = "container-fluid ml-0 pl-0">
+                        <div class = "row">
+                            <div  class = "col-6">
+                                <a href="../assets/images/plot11.png"><img  class="img-fluid img-downsize-sm" src = "../assets/images/plot11.png" alt= "Latitude  vs Max Temperature in NHS"></a> 
+                            </div>
+                            <div  class = "col-6">
+                                <a href="../assets/images/plot12.png"><img  class="img-fluid img-downsize-sm" src = "../assets/images/plot12.png" alt= "Latitude  vs Max Temperature in SHS"></a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                Windspeed doesn't correlate with the distance from the equator.  
+                                <ul>
+                                    <li>Please observe that p-value of the linear regression estimator > significance level (typically 0.05). This means that WE CANNOT say that slope is NOT zero.</li>
+                                    <li>In both hemispheres, a weak correlation between latitude and Windspeed.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                At the time of data is taken, wind speed is centred around almost the same value in both hemispheres.
+                                <ul>
+                                    <li>Northern hemisphere has average windspeed around 6.9 mph.</li>
+                                    <li>Southern hemisphere has average windspeed around 7.1 mph.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
                 </div>
               </div>
               <div class = "col-sm-12 col-md-4">
@@ -56,22 +89,22 @@
                   <div class = "row">
                     <div class= "col-3 col-sm-3 col-md-6">
                       <a href="max_temperature.html">
-                        <img class = "img-fluid img-downsize-sm mar_1" src = "../assets/images/Fig1.png" alt= "Comparison: Latitude vs Max Temperature"> 
+                        <img class = "img-fluid img-downsize-sm mar_1" src = "../assets/images/plot1.png" alt= "Comparison: Latitude vs Max Temperature"> 
                       </a>
                     </div>
                     <div class="col-3 col-sm-3 col-md-6">
                       <a href="humidity.html">
-                        <img class = "img-fluid img-downsize-sm mar_2" src = "../assets/images/Fig2.png" alt="Comparison: Latitude vs humidty">
+                        <img class = "img-fluid img-downsize-sm mar_2" src = "../assets/images/plot2.png" alt="Comparison: Latitude vs humidty">
                       </a>
                     </div>
                     <div class="col-3 col-sm-3 col-md-6">
                       <a href="cloudiness.html">
-                        <img class = "img-fluid img-downsize-sm mar_3" src = "../assets/images/Fig3.png" alt="Comparison: Latitude  vs cloudiness">  
+                        <img class = "img-fluid img-downsize-sm mar_3" src = "../assets/images/plot3.png" alt="Comparison: Latitude  vs cloudiness">  
                       </a>
                     </div>
                     <div class= "col-3 col-sm-3 col-md-6">
                       <a href=#>
-                        <img class = "img-fluid img-downsize-sm mar_4" src = "../assets/images/Fig4.png" alt="Comparison: Latitude  vs Wind Speed">
+                        <img class = "img-fluid img-downsize-sm mar_4" src = "../assets/images/plot4.png" alt="Comparison: Latitude  vs Wind Speed">
                       </a>
                     </div>
                   </div>

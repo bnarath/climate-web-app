@@ -5,38 +5,44 @@
         <title>Comparisons</title>
         <!--Add bootstrap style file-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+         <!--Font awesome glyphicon free alternative-->
+         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>       
         <!--Add custom style file-->
-        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
     </head>
     <body class="background_page">
          <!--navbar-->
-         <nav class="navbar navbar-expand-sm navbar-light bg-custom mb-5">
-            <a id="latitude" class="navbar-brand" href="../../index.html"><strong>Latitude</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems" aria-expanded="true" aria-label="Toggle navigation">
+         <nav class="navbar fixed-top navbar-expand-md navbar-light bg-custom mb-5">
+            <a id="latitude" class="navbar-brand" href="../../index.html"><strong>Latitude <i class="fa fa-globe" aria-hidden="true"></i></strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navItems">
-              <ul class="navbar-nav ml-auto mt-2 mb-3">
-                <li class="nav-item dropdown ml-auto">
-                    <a class="nav-link dropdown-toggle ml-auto" href="#" id="plotsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <strong>Plots</strong>
+                <ul class="navbar-nav ml-auto mt-2 mb-3">
+                  <li class="nav-item dropleft ml-auto">
+                      <a class="nav-link dropdown-toggle ml-auto" href="#" id="plotsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-bar-chart" aria-hidden="true"></i> Plots
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="plotsDropdown">
+                        <a class="dropdown-item" href="max_temperature.html"><i class="fa fa-sun-o" aria-hidden="true"></i> Max Temperature</a>
+                        <a class="dropdown-item " href="humidity.html"><i class="fa fa-tint" aria-hidden="true"></i> Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html"><i class="fa fa-cloud" aria-hidden="true"></i> Cloudiness</a>
+                        <a class="dropdown-item" href="wind_speed.html"><i class="fa fa-fighter-jet" aria-hidden="true"></i>Windspeed</a>
+                      </div>
+                    </li>
+                  <li class="nav-item ml-auto">
+                    <a class="nav-link active" href=#>
+                      <i class="fa fa-book" aria-hidden="true"></i> Comparison
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="plotsDropdown">
-                      <a class="dropdown-item" href="max_temperature.html"><strong>Max Temperature</strong></a>
-                      <a class="dropdown-item" href="humidity.html"><strong>Humidity</strong></a>
-                      <a class="dropdown-item" href="cloudiness.html"><strong>Cloudiness</strong></a>
-                      <a class="dropdown-item" href="wind_speed.html"><strong>Windspeed</strong></a>
-                    </div>
                   </li>
-                <li class="nav-item ml-auto">
-                  <a class="nav-link" href=#><strong>Comparison</strong></a>
-                </li>
-                <li class="nav-item ml-auto">
-                  <a class="nav-link" href="data.html"><strong>Data</strong></a>
-                </li>
-              </ul>
-            </div>
+                  <li class="nav-item ml-auto">
+                    <a class="nav-link" href="data.html">
+                      <i class="fa fa-table" aria-hidden="true"></i> Data</a>
+                  </li>
+                </ul>
+              </div>
+
         </nav>
 
         <div class="container bg-white" id="comparisons">
@@ -53,14 +59,14 @@
                     <div class= "col-md-6">
                     <h3 class = "text-success text-center">vs. Max Temperature</h3>
                     <a href="max_temperature.html">
-                        <img class = "img-fluid" src = "../assets/images/Fig1.png" alt= "Comparison: Latitude vs Max Temperature"> 
+                        <img class = "img-fluid" src = "../assets/images/plot1.png" alt= "Comparison: Latitude vs Max Temperature"> 
                     </a>
                     </div>
                     
                     <div class="col-md-6">
                     <h3 class = "text-success text-center">vs. Humidty</h3>
                     <a href="humidity.html">
-                        <img class="img-fluid" src = "../assets/images/Fig2.png" alt="Comparison: Latitude vs Humidty">
+                        <img class="img-fluid" src = "../assets/images/plot2.png" alt="Comparison: Latitude vs Humidty">
                     </a>
                     </div>
                 </div>
@@ -68,13 +74,13 @@
                 <div class="col-md-6">
                     <h3 class = "text-success text-center">vs. Cloudiness</h3>
                     <a href="cloudiness.html">
-                    <img class="img-fluid" src = "../assets/images/Fig3.png" alt="Comparison: Latitude  vs Cloudiness">  
+                    <img class="img-fluid" src = "../assets/images/plot3.png" alt="Comparison: Latitude  vs Cloudiness">  
                     </a>
                 </div>
                 <div class= "col-md-6">
                     <h3 class = "text-success text-center">vs. Wind Speed</h3>
                     <a href="wind_speed.html">
-                    <img  class="img-fluid" src = "../assets/images/Fig4.png" alt="Comparison: Latitude  vs Wind Speed">
+                    <img  class="img-fluid" src = "../assets/images/plot4.png" alt="Comparison: Latitude  vs Wind Speed">
                     </a>
                 </div>
                 </div>
