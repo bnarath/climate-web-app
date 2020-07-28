@@ -88,8 +88,8 @@ Large screen Vs Small Screen:
 Large screen Vs Small Screen:
 
 <p>
-  <img src="Images/comparison-lg.png" alt="data page large screen" width="60%" height="300px"/>
-  <img src="Images/comparison-sm.png" alt="data page small screen" width="30%" height="300px"/> 
+  <img src="Images/data-lg.png" alt="data page large screen" width="60%" height="300px"/>
+  <img src="Images/data-sm.png" alt="data page small screen" width="30%" height="300px"/> 
 </p>
 
 
