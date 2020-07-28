@@ -106,9 +106,15 @@ Large screen Vs Small Screen for Max Temperature (Other pages are also similar):
 
 #### <a id="navigation-menu"></a>Navigation menu
 
-Large screen:
-![nav menu large screen](Images/nav-lg.png)
 
-Small screen:
-![nav menu small screen](Images/nav-sm.png)
+Large screen Vs Small Screen:
+
+<p>
+  <img src="Images/nav-lg.gif" alt="nav menu large screen" width="60%" height="300px"/>
+  <img src="Images/nav-sm.gif" alt="nav menu small screen" width="30%" height="300px"/> 
+</p>
+
+---
+Every end is a new beginning!
+---
 
