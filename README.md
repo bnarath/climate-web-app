@@ -46,10 +46,10 @@ The website consists of 7 pages total, including:
     * The dataframe is converted to HTML using pandas DF.to_html(). See the documentation [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
 
 * The website, at the top of every page, have a navigation menu that:
- * Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
- * Contains a dropdown menu on the right of the navbar named "Plots" that provides a link to each individual visualization page.
- * Provides two more text links on the right: "Comparisons," which links to the comparisons page, and "Data," which links to the data page.
- * Is responsive (using media queries), the nav have different behavior on small screens (< 768px) as in ["Navigation Menu" section](#navigation-menu) (notice the background color change).
+  * Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
+  * Contains a dropdown menu on the right of the navbar named "Plots" that provides a link to each individual visualization page.
+  * Provides two more text links on the right: "Comparisons," which links to the comparisons page, and "Data," which links to the data page.
+  * Is responsive (using media queries), the nav have different behavior on small screens (< 768px) as in ["Navigation Menu" section](#navigation-menu) (notice the background color change).
 
 * The website is deployed to GitHub pages.
 
