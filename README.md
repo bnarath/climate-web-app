@@ -67,8 +67,8 @@ This section contains screenshots of each page built, at varying screen widths.
 Large screen Vs Small Screen:
 
 <p>
-  <img src="Images/front_page.png" alt="Landing page large screen" width="45%" height="300px"/>
-  <img src="Images/front_page_sm.png" alt="Landing page small screen" width="45%" height="300px"/> 
+  <img src="Images/front_page.png" alt="Landing page large screen" width="70%" height="300px"/>
+  <img src="Images/front_page_sm.png" alt="Landing page small screen" width="30%" height="300px"/> 
 </p>
 
 
