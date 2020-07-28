@@ -15,16 +15,16 @@
    </head>
     <body>
         <!--navbar-->
-        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-custom">
+        <nav class="navbar navbar-expand-md navbar-light bg-custom">
             <a id="latitude" class="navbar-brand" href="#"><strong>Latitude <i class="fa fa-globe" aria-hidden="true"></i></strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navItems">
-              <ul class="navbar-nav ml-auto mt-2 mb-3">
-                <li class="nav-item dropleft ml-auto">
-                    <a class="nav-link dropdown-toggle ml-auto" href="#" id="plotsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <ul class="navbar-nav pos-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="plotsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-paint-brush" aria-hidden="true"></i> Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="plotsDropdown">
@@ -34,12 +34,12 @@
                       <a class="dropdown-item" href="Resources/visualizations/wind_speed.html"><i class="fa fa-fighter-jet" aria-hidden="true"></i>Windspeed</a>
                     </div>
                 </li>
-                <li class="nav-item ml-auto">
+                <li class="nav-item">
                   <a class="nav-link" href="Resources/visualizations/comparisons.html">
                     <i class="fa fa-book" aria-hidden="true"></i> Comparison
                   </a>
                 </li>
-                <li class="nav-item ml-auto">
+                <li class="nav-item">
                   <a class="nav-link" href="Resources/visualizations/data.html">
                     <i class="fa fa-table" aria-hidden="true"></i> Data</a>
                 </li>
@@ -51,8 +51,8 @@
         <div class = "container-fluid background">
             <div class = "row">
               <div  class = "col-sm-12 col-md-8">
-                <div id="summary" class = "mt-5 px-4 jumbotron jumbotron-fluid bg-white ml-auto">
-                  <h2 class = "text-success">Summary: Latitude vs. X</h2>
+                <div id="summary" class = "px-4 jumbotron jumbotron-fluid bg-white ml-auto">
+                  <h3 class = "text-success">Summary: Latitude vs. X</h3>
                   <hr class="my-4">
                   <img class = "img-downsize float-left mr-3 mt-2" src = "Resources/assets/images/plot1.png" alt= "Latitude vs max temperature"> 
                   <p class = "text-muted mt-4 ">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
@@ -60,8 +60,8 @@
                 </div>
               </div>
               <div class = "col-sm-12 col-md-4">
-                <div id="visualizations" class="mt-5 px-4 jumbotron jumbotron-fluid bg-white">
-                  <h3 class = "text-success">Visualizations</h3>
+                <div id="visualizations" class="px-4 jumbotron jumbotron-fluid bg-white">
+                  <h4 class = "text-success">Visualizations</h4>
                   <hr class="my-4">
                   <div class = "row">
                     <div class= "col-3 col-sm-3 col-md-6">

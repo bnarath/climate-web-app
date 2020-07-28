@@ -14,38 +14,37 @@
         <link rel="stylesheet" type="text/css" href="../styles/style.css">
     </head>
     <body class="background_page">
-          <!--navbar-->
-          <nav class="navbar fixed-top navbar-expand-md navbar-light bg-custom mb-5">
+           <!--navbar-->
+        <nav class="navbar navbar-expand-md navbar-light bg-custom">
             <a id="latitude" class="navbar-brand" href="../../index.html"><strong>Latitude <i class="fa fa-globe" aria-hidden="true"></i></strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navItems">
-                <ul class="navbar-nav ml-auto mt-2 mb-3">
-                  <li class="nav-item dropleft ml-auto">
-                      <a class="nav-link dropdown-toggle ml-auto" href="#" id="plotsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fa fa-paint-brush" aria-hidden="true"></i> Plots
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="plotsDropdown">
-                        <a class="dropdown-item" href="max_temperature.html"><i class="fa fa-fire" aria-hidden="true"></i> Max Temperature</a>
-                        <a class="dropdown-item " href="humidity.html"><i class="fa fa-tint" aria-hidden="true"></i> Humidity</a>
-                        <a class="dropdown-item" href="cloudiness.html"><i class="fa fa-cloud" aria-hidden="true"></i> Cloudiness</a>
-                        <a class="dropdown-item" href="wind_speed.html"><i class="fa fa-fighter-jet" aria-hidden="true"></i>Windspeed</a>
-                      </div>
-                    </li>
-                  <li class="nav-item ml-auto">
-                    <a class="nav-link" href="comparisons.html">
-                      <i class="fa fa-book" aria-hidden="true"></i> Comparison
+              <ul class="navbar-nav pos-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="plotsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i> Plots
                     </a>
-                  </li>
-                  <li class="nav-item ml-auto">
-                    <a class="nav-link active" href=#>
-                      <i class="fa fa-table" aria-hidden="true"></i> Data</a>
-                  </li>
-                </ul>
-              </div>
-
+                    <div class="dropdown-menu" aria-labelledby="plotsDropdown">
+                      <a class="dropdown-item" href="max_temperature.html"><i class="fa fa-fire" aria-hidden="true"></i> Max Temperature</a>
+                      <a class="dropdown-item" href="humidity.html"><i class="fa fa-tint" aria-hidden="true"></i> Humidity</a>
+                      <a class="dropdown-item" href="cloudiness.html"><i class="fa fa-cloud" aria-hidden="true"></i> Cloudiness</a>
+                      <a class="dropdown-item" href="wind_speed.html"><i class="fa fa-fighter-jet" aria-hidden="true"></i>Windspeed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="comparisons.html">
+                    <i class="fa fa-book" aria-hidden="true"></i> Comparison
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=#>
+                    <i class="fa fa-table" aria-hidden="true"></i> Data</a>
+                </li>
+              </ul>
+            </div>
         </nav>
 
 
@@ -53,19 +52,19 @@
             <div class = "row mx-0">
                 <div  class = "col-12 mb-0">
                     <div class = "px-4 jumbotron jumbotron-fluid bg-white mb-0">
-                        <h2 class = "text-success">Data</h2>
+                        <h3 class = "text-success">Data</h3>
                         <hr class="my-4">
-                        <p class = "text-muted">The following table includes all of the data that was used for plotting during this project.</p>
+                        <p class = "text-muted">The following table includes all of the data that was used for plotting in this project.</p>
                     </div>
                 </div>  
            
 
                 <!--https://www.convertcsv.com/csv-to-html.htm-->
                 <div class = "table-responsive mx-5">
-                    <table id="data-table" class="table table-lg table-bordered table-hover table-condensed table-striped">
-                        <thead class="bg-success text-light">
+                    <table  class="table table-sm text-xsmall table-bordered table-hover table-condensed table-striped">
+                        <thead class="text-light bg-success">
                             <tr>
-                                <th></th>
+                                <th>Index</th>
                                 <th>City</th>
                                 <th>Country</th>
                                 <th>Lat</th>

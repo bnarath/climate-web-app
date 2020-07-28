@@ -21,17 +21,18 @@
 }
 
 #latitude {
-    margin:  15px 10px -8px 10px;
-    padding: 5px;
+    margin:  0px 0px 0px 10px;
+    padding: 13px 5px 17px 5px;
     background-color: #5cb85c;
     color: #f7f7f7;
 }
 
-#navItems {
-    margin-bottom: -30px;
-    margin-right: 10px;  
+.navbar {
+    margin-top:0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
-
 
 .bg-custom {
     background-color:white;
@@ -40,7 +41,8 @@
 .background {
     background-color: #EDEDED;
     height: 100%;
-    margin-top: 60px;
+    margin-top: 0px;
+    padding-top:100px;
 }
 
 #summary {
@@ -51,55 +53,35 @@
     max-width: 80%;
 }
 #comparisons {
-    max-width: 75%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
 }
 
 #data {
-    max-width: 75%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
 }
 
 .mar_1 {
-    margin: 10px -50px 0px 10px !important;
+    margin: 10px -50px 0px 10px;
  }
 
 .mar_2 {
-    margin: 10px 10px 0px -10px !important;
+    margin: 10px 10px 0px -10px;
  }
 
 .mar_3 {
-    margin: 30px -50px -30px 10px !important;
+    margin: 30px -50px -30px 10px;
  }
 
 .mar_4 {
-    margin: 30px 10px -30px -10px !important;
+    margin: 30px 10px -30px -10px;
  }
 
-h1 {
-    font-size: 5.5vw;
-  }
-h2 {
-    font-size: 4.0vw;
-  }
-h3 {
-    font-size: 3.0vw;
-  }
-h4 {
-    font-size: 2.5vw;
-    font-weight: bolder;
-  }
-p,th,li, .fontp{
-    font-size: 1.5vw;
-    line-height: 1.7;
-  }
-tr,td {
-    font-size: 1.2vw;
-  }
 
 
 .background_page{
@@ -109,27 +91,12 @@ tr,td {
 
 #navItems > ul > li > div > a {
     font-size: 1.4vw;
-    line-height: 2vh;
+    line-height: 2.5vh;
     font-weight: 1vmin;
-    height: 2vh;
-    padding: 0px 0px 0px 5px;
+    height: 2.5vh;
+    padding: 0px 0px 0px 2px;
     margin: 0px 0px 0px 0px;
 }
-
-
-
-.dropdown-menu{
-    background-color:white;
-    height: 10vh;
-    width:20vw;
-    min-width: 0;
-    overflow: scroll;
-  }
-
-.dropdown-menu>a.active{
-    background-color: lightcoral;
-    color: white;
-  }
 
 li:hover a:hover {
     text-decoration: none;
@@ -137,6 +104,32 @@ li:hover a:hover {
     transform: skew(-20deg);
   }
 
+.img-active, .img-hover:hover {
+   box-shadow:  0px 0px 5px 2px purple;
+}
+
+@media all and (min-width: 768px) {
+    .disp-rule {
+        display: none;
+    }
+
+    .pos-right {
+        margin-left:auto;
+    }
+
+    .dropdown-menu{
+        background-color:white;
+        height: 12vh;
+        width:16vw;
+        min-width: 0;
+        overflow: scroll;
+      }
+    
+    .dropdown-menu>a.active{
+        background-color: lightcoral;
+        color: white;
+      }
+}
 @media all and (max-width: 768px) {
 
     #latitude {
@@ -163,32 +156,16 @@ li:hover a:hover {
         max-width: 100%;
     }
 
+    #comparisons {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
     .mar_1, .mar_2, .mar_3, .mar_4 {
         margin: 0px !important;
      }
 
-     h1 {
-        font-size: 8.0vw;
-      }
-    h2 {
-        font-size: 6.5vw;
-      }
-    h3 {
-        font-size: 5.0vw;
-      }
-    h4 {
-        font-size: 3.5vw;
-        font-weight: bolder;
-      }
-    p,th,li, .fontp {
-        font-size: 2.5vw;
-        line-height: 1.7;
-      }
-
-    tr,td {
-        font-size: 1.5vw;
-      }
-
+    
     .background_page{
         background-color: white;
     }
@@ -197,6 +174,38 @@ li:hover a:hover {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 100px;
+        margin-top: 50px;
     }
+
+    
+    .ws-fix {
+        margin-top: 4vh;
+    }
+
+    .g-fix {
+        margin-top: 5vh;
+    }
+    .img-fix {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-width: 75%;
+    }
+
+    .disp-rule {
+        margin-top: 5vh;
+        margin-bottom: 6vh;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .dropdown-menu{
+        background-color:#5cb85c;
+        border:none;
+      }
+    
+    .dropdown-menu>a.active{
+        color: white;
+        background-color: #5cb85c;
+      }
 }
