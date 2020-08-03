@@ -89,16 +89,6 @@
 }
 
 
-#navItems > ul > li > div > a {
-    font-size: 1.4vw;
-    line-height: 2.5vh;
-    font-weight: 1vmin;
-    height: 1.5vw;
-    padding: 0px 0px 0px 2px;
-    margin: 0px 0px 0px 0px;
-}
-
-
 li:hover a:hover {
     text-decoration: none;
     border: none;
@@ -120,8 +110,8 @@ li:hover a:hover {
 
     .dropdown-menu{
         background-color:white;
-        height: 8vw;
-        width:16vw;
+        height: 350%;
+        width:200%;
         min-width: 0;
         overflow: scroll;
       }
